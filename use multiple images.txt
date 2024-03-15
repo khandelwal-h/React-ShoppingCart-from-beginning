@@ -1,0 +1,23 @@
+import React from 'react';
+import Itemcard from './Addtocart/Itemcard'; // Corrected import path
+
+const Cart = () => {
+  return (
+    <>
+      <h1 className="text-center mt-3">All items</h1>
+      <section className="py-4 container">
+        <div className="row justify-content-center">
+          {/* Render Itemcard components here */}
+          <Itemcard 
+            img="image-url"  // replace with the actual image URL
+            title="Item Title"  // replace with the actual title
+            desc="Item Description"  // replace with the actual description
+          />
+          {/* Add more Itemcard components as needed */}
+        </div>
+      </section>
+    </>
+  );
+}
+
+export default Cart;
